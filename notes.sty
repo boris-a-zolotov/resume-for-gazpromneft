@@ -1,0 +1,80 @@
+\RequirePackage{amsmath,graphicx,amsfonts,euscript,amssymb,ulem,mathdots}
+\RequirePackage{color,xcolor}
+\RequirePackage[utf8x]{inputenc}
+\RequirePackage[russian]{babel}
+\RequirePackage[matrix,arrow,curve]{xy}
+
+\renewcommand{\labelenumi}{\theenumi)}
+\frenchspacing
+
+\pagestyle{plain}
+\topmargin=-0.7cm
+\textwidth=15.6cm
+\textheight=25.6cm
+\oddsidemargin=0.16cm
+\evensidemargin=0.16cm
+\voffset=0pt
+\headheight=0pt
+\headsep=0pt
+
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{\Roman{subsection}.}
+
+\def\scolon{\rlap{,}\raisebox{0.8ex}{,} }
+\definecolor{spoiler}{gray}{0.8}
+
+%% DEF: Отступы вертикальные и горизонтальные
+\def\newstr{\par\noindent}
+\def\ms{\medskip\newstr}
+\def\mms{\medskip\medskip\newstr}
+\def\excl{\!\!\!\!\!\!}
+
+%% DEF: Шрифт \mathbb
+\def\N{\mathbb N} \def\Z{\mathbb Z}
+\def\Q{\mathbb Q} \def\R{\mathbb R}
+\def\C{\mathbb C} \def\F{\mathbb F}
+\def\P{\mathbb P} \def\H{\mathbb H}
+\def\Id{\mathbb I \mathrm d}
+
+%% DEF: Скобки
+\def\ll{\left(} \def\rr{\right)}
+\def\lf{\left\lfloor} \def\rf{\right\rfloor}
+\def\ld{\left|} \def\rd{\right|}
+\def\lb{\left[} \def\rb{\right]}
+\def\lag{\left\langle} \def\rag{\right\rangle}
+
+%% DEF: Фактор
+\def\fact#1#2{\raisebox{.2em}{$#1$}\! \left/
+  \vphantom{\raisebox{.2em}{$#1$}}
+  \!\raisebox{-.2em}{$#2$} \right.}
+
+%% DEF: Операторы
+\def\gcd{\mbox{НОД}\,}
+\def\mod#1{\ (\mathrm{mod}\ #1)}
+\def\s#1{\sqrt{#1}} \def\ovl{\overline}
+\def\Exp{\mathrm{Exp}\,} \def\Log{\mathrm{Log}\,}
+
+%% DEF: Алгебра матриц
+\def\Tr{\mathrm{Tr\,}} \def\End{\mathrm{End\,}}
+
+%% DEF: Стрелки
+\def\ra{\longrightarrow} \def\rar{\rightarrow}
+\def\impl{\Longrightarrow} \def\tozd{\Longleftrightarrow}
+
+%% DEF: Буквы
+\def\ve{\varepsilon} \def\k{\varkappa}
+\def\vfi{\varphi} \def\l{\lambda}
+\def\clasr{\EuScript R} \def\fib{\EuScript F}
+\def\GL{\mathbf{GL}}
+
+%% DEF: Важное оформление
+\def\matr#1#2#3#4{\ll\begin{array}{cc} #1 & #2 \\ #3 & #4 \end{array}\rr}
+\def\pmatr#1{\begin{pmatrix} #1 \end{pmatrix}}
+\def\stat#1#2{{\bf #1}: {\it #2}}
+\def\RR{\R\cup\{\infty\}}
+
+\def\x{[\raisebox{0.05em}{\footnotesize\!$[$} x \raisebox{0.05em}{\footnotesize$]$\!}]}
+\def\xz{[\raisebox{0.05em}{\footnotesize\!$[$} z \raisebox{0.05em}{\footnotesize$]$\!}]}
+
+\def\Nm{\mathrm{Nm}}
+\def\part#1{\frac{\partial}{\partial #1}}
